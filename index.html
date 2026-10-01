@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Práctica de DNS</title>
+<link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+<div class="bg"><i></i><i></i><i></i></div>
+<main class="app">
+  <header>
+    <h1>Práctica de DNS</h1>
+    <label class="switch" title="Cambiar tema">
+      <input type="checkbox" id="theme" aria-label="Cambiar tema">
+      <span class="track"><span class="knob"><span class="spot"></span><span class="spot s2"></span></span></span>
+    </label>
+  </header>
+
+  <nav class="picks" id="picks" aria-label="Elige un ejemplo"></nav>
+
+  <section class="glass info" aria-live="polite">
+    <div class="ico" id="ico"></div>
+    <div class="txt">
+      <h2 id="title"></h2>
+      <p id="text"></p>
+    </div>
+  </section>
+
+  <section class="term glass">
+    <div class="bar"><span></span><span></span><span></span><b id="host">cmd</b></div>
+    <pre class="cmd"><code id="cmd"></code><span class="caret"></span></pre>
+    <div class="loader" id="loader"></div>
+    <div class="resp"><small>Respuesta</small><pre><code id="out"></code></pre></div>
+  </section>
+
+  <footer>
+    <button class="round small" id="back" aria-label="Paso anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="dots" id="dots"></div>
+    <button class="round go" id="next"><svg viewBox="0 0 24 24" id="nextIco"><path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg><span id="nextLabel">Continuar</span></button>
+  </footer>
+  <p class="note">Los valores de las respuestas son ilustrativos: en tu red las IP pueden cambiar.</p>
+</main>
+<script src="js/app.js?v=2"></script>
+</body>
+</html>
